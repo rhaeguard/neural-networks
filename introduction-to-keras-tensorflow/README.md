@@ -11,6 +11,7 @@ import tensorflow.keras as keras
 #### Loading the dataset
 
 The very next thing is to load the dataset - [MNIST](http://yann.lecun.com/exdb/mnist/) which is in fact 28x28 unique, handwritten, grayscaled images of digits from 0-9 as following
+
 ![MNIST](../images/mnist.png)
 
 To get the dataset we write the subsequent line
