@@ -40,7 +40,9 @@ Let's take a close look at the diagram above. The NN on the left is the regular,
 When we unroll the network, we see a similar structure as FFNNs and essentially, RNNs are similar to FFNNs if they are unrolled except for doing different tasks in hidden layers.
 
 The formula below represents the state `h<t>` in RNNs. As you can see `h<t>` is influenced by both `h<t-1>` that is previous state and `x<t>` which is the input. The arguments/parameters of the function is represented via `theta`.
-![Formula](../images/rnn-formula-1.png)*source : http://www.deeplearningbook.org/contents/rnn.html*
+![Formula](../images/rnn-formula-1.png)
+
+*source : http://www.deeplearningbook.org/contents/rnn.html*
 
 These are the formulas that govern RNNs. Of course, in real world, variations of and some additions to these formulas are used. 
 
@@ -66,7 +68,7 @@ For any NN we use the phrase 'learning'. 'Learning' means the network figures ou
 This is overall loss (cost function). In each time step in forward propagation the loss is calculated and accumulated(summed up or averaged). After that, the backpropagation starts and applied weights and biases are changed. By changing, I mean,using for example, **negative stochastic gradient descent**, network tries to find the best combinations of weights and biases to decrease the **cost function** (basically the sum of loss functions + some regularization). The reason why we use negative gradient descent is that, normally gradient shows where's the steepest increase for the given function.
 
 Here's the explanation about loss, cost and objective functions.
-![Loss Cost Obj](../images/loss_cost_obj.png)
+![Loss Cost Obj](../images/loss_cost_obj.PNG)
 
 *[https://stats.stackexchange.com/users/28903/lejlot](https://stats.stackexchange.com/users/28903/lejlot)*
 
