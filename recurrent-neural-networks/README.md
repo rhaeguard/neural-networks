@@ -13,7 +13,7 @@
 
 ![Basic Feed-forward Neural Network](../images/feed-forward.png)
 
-This is the diagramm of a vanilla FFNN. In FFNN, input is taken weights are applied and through some hidden layers, some other weights are applied and finally some output is generated, whether it is a 'yes' or 'no' type of binary classification or rather number classification, etc. There's no way that input `x<t>` to be affected by `x<t-1>`, therefore it means each input is independent. For example, in CNN, evaluation of any pixel doesn't affected by its neighbors. For FFNNs it is said that they don't have any internal state - memory.
+This is the diagramm of a vanilla FFNN. In FFNN, input is taken, weights are applied and through some hidden layers, some other weights are applied and finally some output is generated, whether it is a 'yes' or 'no' type of binary classification or rather number classification, etc. There's no way that input `x<t>` to be affected by `x<t-1>`, therefore it means each input is independent. For example, in CNN, evaluation of any pixel isn't affected by its neighbors. For FFNNs it is said that they don't have any internal state - memory.
 
 But what's the problem of not having a state? What kind of issues might it have? Let's look at an example.
 
