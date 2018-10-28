@@ -65,7 +65,7 @@ However, in RNNs, since there's a recurrent architecture, they share the same pa
 #### Backpropagation Through Time (BPTT)
 For any NN we use the phrase 'learning'. 'Learning' means the network figures out how to interpret the given input based on some calculations and expected outputs and the weights are adjusted. In order to understand backpropagation, we need a loss function, that is, let's say `Crossentropy Loss function`:
 ![Formula](../images/crossen.png)
-This is overall loss (cost function). In each time step in forward propagation the loss is calculated and accumulated(summed up or averaged). After that, the backpropagation starts and applied weights and biases are changed. By changing, I mean,using for example, **negative stochastic gradient descent**, network tries to find the best combinations of weights and biases to decrease the **cost function** (basically the sum of loss functions + some regularization). The reason why we use negative gradient descent is that, normally gradient shows where's the steepest increase for the given function.
+This is overall loss (cost function). In each time step in forward propagation the loss is calculated and accumulated(summed up or averaged). After that, the backpropagation starts and applied weights and biases are changed. By changing, I mean,using for example, **stochastic gradient descent**, network tries to find the best combinations of weights and biases to decrease the **cost function** (basically the sum of loss functions + some regularization). The reason why we use gradient descent is that, normally gradient shows where's the steepest increase for the given function.
 
 Here's the explanation about loss, cost and objective functions.
 ![Loss Cost Obj](../images/loss_cost_obj.PNG)
